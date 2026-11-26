@@ -1,5 +1,9 @@
 .form{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+    gap:15px;
+    margin:700px;
+    margin:auto;
 
 }
+
