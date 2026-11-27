@@ -6,4 +6,23 @@
     margin:auto;
 
 }
+.nome {
+    grid-column: span 1;
+}
 
+.pai, .mae, .estado {
+    grid-column: span 3;
+}
+
+.rua {
+    grid-column: span 2;
+}
+
+.bairro {
+    grid-column: span 2;
+}
+
+button {
+    grid-column: span 3;
+    justify-self: center;
+}
