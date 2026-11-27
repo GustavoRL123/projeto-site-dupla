@@ -1,13 +1,27 @@
-.form{
+.form {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    gap:15px;
-    margin:700px;
-    margin:auto;
-
+    gap: 15px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
 }
+
+/* ORGANIZACAO DOS CAMPOS */
+
+.form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* CAMPOS QUE OCUPAM MAIS ESPACO */
+
 .nome {
-    grid-column: span 1;
+    grid-column: span 3;
 }
 
 .pai, .mae, .estado {
@@ -22,7 +36,20 @@
     grid-column: span 2;
 }
 
-button {
+/* BOTAO CENTRALIZADO COM FLEXBOX */
+
+.form button {
     grid-column: span 3;
     justify-self: center;
+    padding: 12px 35px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.form button:hover {
+    background-color: #444;
+}
+
